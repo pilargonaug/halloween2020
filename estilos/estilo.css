@@ -1,0 +1,32 @@
+@font-face {
+    font-family:'lycanthrope' ;
+    src: url('../fuentes/Lycanthrope.ttf');
+}
+body {background-color:black;}
+#container {width:1440px;/* ancho de la foto */
+            height:900px;/* alto de la foto */
+            background-image: url('../imagenes/wallpaper.jpg');
+            margin: auto; /* container centrado */
+            position:relative; /* la posición del container puede variar */
+}
+#titulo { position:absolute; /* dentro de su contenedor, lo fijo en unas coord */
+          top:30px;
+          left:200px;
+          font-family:'lycanthrope';
+          font-size:2em;
+          text-shadow:1px 1px 1px #A43100;
+}
+#fantasma {position:absolute;
+           top:600px;
+           left:200px;
+           visibility:hidden;
+           cursor:crosshair;
+}
+#murcielago{/*border:1px solid white;*/
+            width:200px;
+            height:120px;
+            position:absolute;
+            top:180px;
+            left:100px;
+            cursor:pointer;/* el cursor cambia a clickable */
+}
